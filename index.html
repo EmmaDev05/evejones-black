@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Eve Jones</title>
+    <meta
+      name="description"
+      content="Eve Jones, theatre designer based in Manchester: set, costume, wigs and props."
+    />
+    <!-- Preview only: stops search engines from indexing this page. Remove when the site goes live. -->
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Olivia is on Adobe Fonts: replace this comment with the Web Project link, e.g. <link rel="stylesheet" href="https://use.typekit.net/XXXXXXX.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="mono" href="#" aria-label="Eve Jones, home">EJ</a>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Open menu"
+        >
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="menu" id="menu" hidden>
+      <nav aria-label="Main">
+        <a href="#" data-nav="work">Work</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <!-- LinkedIn href is a placeholder until Eve's real profile URL is available -->
+      <div class="menu-links">
+        <a
+          href="https://www.instagram.com/_jonesevie_/"
+          target="_blank"
+          rel="noopener"
+          >Instagram</a
+        >
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="mailto:joneseve42@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <main id="app"></main>
+
+    <footer class="site">
+      <div class="wrap">
+        <span>© Eve Jones</span>
+        <span>Design by Blacksuit</span>
+      </div>
+    </footer>
+
+    <dialog class="lb" id="lb" aria-label="Image viewer">
+      <div class="lb-in">
+        <div class="lb-bar">
+          <span id="lb-count"></span
+          ><button type="button" id="lb-close">Close</button>
+        </div>
+        <div class="lb-stage"><img id="lb-img" alt="" /></div>
+        <div class="lb-foot">
+          <div class="lb-cap" id="lb-cap"></div>
+          <div class="lb-btns">
+            <button type="button" id="lb-prev" aria-label="Previous image">
+              Prev
+            </button>
+            <button type="button" id="lb-next" aria-label="Next image">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
